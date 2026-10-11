@@ -1,14 +1,35 @@
-CyberTech Intelligence
+# CyberTech Intelligence
 
-Objective
-Automatically collect cybersecurity and technology news, prepare a concise digest, and deliver it to Telegram.
+A self-hosted n8n project that collects cybersecurity
+and technology news and delivers a concise digest
+through Telegram.
 
-Initial scope
-- Collect articles from one RSS feed.
-- Select up to five articles.
-- Format them into a single Telegram message with titles and source links.
-- Run manually while developing.
-- Add duplicate detection, scheduling, and AI analysis in later stages.
+## Objectives
 
-Success criteria
-You can run the workflow, receive the digest on Telegram, trace every article to its original source, and explain what each node does.
+- Automate news collection.
+- Filter and format useful articles.
+- Deliver a readable Telegram digest.
+- Learn workflow automation, APIs, data processing,
+  and AI-assisted information analysis.
+
+## Architecture
+
+RSS sources -> n8n -> Processing -> Telegram
+
+## Development status
+
+- [ ] Local n8n environment
+- [ ] First RSS source
+- [ ] Telegram delivery
+- [ ] Single-message digest
+- [ ] Duplicate detection
+- [ ] Scheduled execution
+- [ ] AI relevance scoring
+- [ ] AI-generated summaries
+
+## Security
+
+- Do not commit API keys or bot tokens.
+- Inspect exported workflow files before committing.
+- Keep the n8n editor accessible only locally
+  during initial development.
